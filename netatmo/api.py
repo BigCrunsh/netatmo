@@ -42,12 +42,11 @@ class NetatmoApi():
         return StationsData(self._data)
 
 
-
 class StationsData():
 
     def __init__(self, data):
         self._data = data
-    
+
     def get_module_names(self):
         return [self._data['devices'][0]['module_name']] + list(map(
             lambda m: m['module_name'],

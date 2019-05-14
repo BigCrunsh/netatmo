@@ -34,4 +34,3 @@ def draw_data(stations_data, font_file, image_file):
 
     del draw
     im.save(image_file)
-
